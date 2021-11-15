@@ -1,8 +1,8 @@
 import sys
 
-from src.board import Board
-from src.ttt_game import TicTacToe
-from src.user import HumanGamer, Gamer
+from .board import Board
+from .ttt_game import TicTacToe
+from .user import HumanGamer, Gamer
 
 
 class Lobby:

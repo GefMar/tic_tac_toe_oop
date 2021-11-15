@@ -1,4 +1,4 @@
-from src.lobby import Lobby
+from src import Lobby
 
 
 if __name__ == '__main__':

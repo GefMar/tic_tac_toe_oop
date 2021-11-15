@@ -1,6 +1,6 @@
 from itertools import cycle
 
-from src.game_result import GameResult
+from .game_result import GameResult
 
 
 class TicTacToe:
