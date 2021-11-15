@@ -12,11 +12,12 @@ class TicTacToe:
     def run(self):
         for step_num, user in enumerate(cycle(self.users)):
             print(f"Ход игрока {user} с символом {user.symbol}")
-            self.board.print_board()
+            print(self.board)
+            # self.board.print_board()
             self.__game_step(user)
             if self.board.chek_board():
                 return GameResult(step_num, user)
-            if step_num == (self.board.size() ** 2) - 1:
+            if step_num == (self.board.size() ** 2):
                 return GameResult(step_num, None)
 
     def __game_step(self, user):
@@ -26,4 +27,5 @@ class TicTacToe:
                 self.board.add_step(step, user.symbol)
             except ValueError:
                 print("Неверные координаты, повторите ввод")
+                continue
             break
